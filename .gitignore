@@ -7,3 +7,9 @@ notebooks/Luderick_Seagrass/Fish_automated_identification_and_counting
 notebooks/Luderick_Seagrass/inference_outputs
 notebooks/Luderick_Seagrass/models
 pecs
+*.docx
+papers
+notebooks/Luderick_Seagrass/__pycache__
+notebooks/Luderick_Seagrass/pytorch_utility_scripts
+*.py
+~WRL0965.tmp
