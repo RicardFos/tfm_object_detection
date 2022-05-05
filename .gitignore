@@ -13,3 +13,7 @@ notebooks/Luderick_Seagrass/pytorch_utility_scripts
 *.py
 ~WRL0965.tmp
 ~$M Introduction to Object Detection.docx
+*.tmp
+yolov4_architecture.xcf
+yolov4-sam-mish.cfg
+yolov4_architecture.png
