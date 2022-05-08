@@ -17,3 +17,5 @@ notebooks/Luderick_Seagrass/pytorch_utility_scripts
 yolov4_architecture.xcf
 yolov4-sam-mish.cfg
 yolov4_architecture.png
+notebooks/Luderick_Seagrass/datasets
+notebooks/Luderick_Seagrass/yolov5
