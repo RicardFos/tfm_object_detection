@@ -15,6 +15,8 @@ The included files are the following:
   * `Luderick Detection YOLOv5 - Inference.ipynb`: Uses and evaluates the trained YOLOv5 model
   * `Luderick Tracking.ipynb`: Implements a simple object tracking algorithm on the trained YOLOv5 results
 
+>Resulting videos generated with the trained models as well as the video presentation of the thesis can be found in the following zip file: https://drive.google.com/file/d/1nsf3IblhM83M6ka4x0SFKfmVkfHyHAcK/view?usp=sharing
+
 >The used libraries are included in `requirements.txt` inside the notebooks folder
 
 >The Luderick-Seagrass Dataset can be found in the following repository:
