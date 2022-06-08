@@ -29,3 +29,14 @@ detection metrics.pdf
 introduction chapter.pdf
 *.PNG
 entrega final
+~$M Ricard Fos.docx
+PresentationTFM.pptx
+notebooks/datasets
+notebooks/faster_rcnn_outputs
+notebooks/yolov5
+notebooks/Fish_automated_identification_and_counting
+notebooks/inference_outputs
+notebooks/models
+*.csv
+SlidesTFM.pptx
+TFM Ricard Fos.docx
