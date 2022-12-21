@@ -1,37 +1,20 @@
-# Underwater Species Detection in Images and Videos
+# Deep Learning for Point Clouds
 
-This repository includes the docummentation and presentation slides for my Master's Thesis project titled "Underwater Species Detection in Images and Videos" and the jupyter notebooks that include the training and evaluation of Object Detection Models on the Luderick-Seagrass Dataset.
+This repository includes a <b>pytorch</b> implementation and training of a <b>PointNet for 3D point cloud classification</b>.
 
 The included files are the following:
-* <b>TFM Ricard Fos.pdf</b>: The documentation of the master's thesis
-* <b>SlidesTFM.pdf</b>: The slides of the thesis presentation in pdf format
-* <b>notebooks</b>: This folder includes the following Jupyter Notebooks:
-  * `Data Preprocessing Luderick Seagrass.ipynb`: analizes and preprocesses de data from the luderick-seagrass dataset and saves new preprocessed dataframes as .csv
-  * `Luderick Detection Faster R-CNN - Training.ipynb`: Trains a Faster R-CNN model on the Luderick-seagrass dataset
-  * `Luderick Detection Faster R-CNN - Inference.ipynb`: Uses and evaluates the trained Faster R-CNN model
-  * `Luderick Segmentation Mask R-CNN - Training.ipynb`: Trains a Mask R-CNN model on the Luderick-seagrass dataset
-  * `Luderick Segmentation Mask R-CNN - Inference.ipynb`: Uses and evaluates the trained Mask R-CNN model
-  * `Luderick Detection YOLOv5 - Training.ipynb`: Trains a YOLOv5 model on the Luderick-seagrass dataset
-  * `Luderick Detection YOLOv5 - Inference.ipynb`: Uses and evaluates the trained YOLOv5 model
-  * `Luderick Tracking.ipynb`: Implements a simple object tracking algorithm on the trained YOLOv5 results
-
->Resulting videos generated with the trained models as well as the video presentation of the thesis can be found in the following zip file: https://drive.google.com/file/d/1nsf3IblhM83M6ka4x0SFKfmVkfHyHAcK/view?usp=sharing
-
->The used libraries are included in `requirements.txt` inside the notebooks folder
-
->The Luderick-Seagrass Dataset can be found in the following repository:
-https://github.com/globalwetlands/luderick-seagrass
+* `PointNet Pytorch Implementation.ipynb`: The PointNet implementation in pytorch and explains each step
+* `PointNet Training and Evaluation.ipynb`: The training and evaluation of the PointNet with a subset of the <b>ShapeNet dataset</b>
 
 
 
-## Thesis Abstract:
+## Results
+The trained model achieved <b>93% accuracy</b> on the test set.
+Results from the test set can be checked in the following confusion matrix.
+![image](https://user-images.githubusercontent.com/11573780/208876412-896d9173-8e5d-4f4e-b4b2-35a6316afb43.png)
 
-The topic of this study belongs to the area of Deep Learning, which means using neural networks to create predictive models. Concretely, this thesis is about object detection models using Deep Learning to be able to detect and classify underwater species on images and on video in real-time.
+The model also shows the <b>main points</b> from the input point cloud used for the prediction.
 
-The study of Deep Learning methods is more relevant each year, as it is being used on more kinds of problems as the research expands. Object detection is a very useful tool and is becoming the backbone for autonomous robots. Detecting underwater species is an important task given the difficulty of humans to stay in that habitat. Underwater cameras can be used to find given species and can be used to count them and study their behavior.
+![image](https://user-images.githubusercontent.com/11573780/208877094-fdeba128-c3cf-455d-b411-e26a58d7038a.png)
+![image](https://user-images.githubusercontent.com/11573780/208877131-c3a7e0c9-960e-4eb1-a5bb-b391510901ad.png)
 
-A study of the origins and evolution of object detection models has been conducted and two detection models and one instance segmentation model have been retrained for the detection of underwater species on a public dataset.  The resulting models have been evaluated in terms of detection speed and precision using the standard metric for object detection called Mean Average Precision. Resulting videos have been generated with drawn detections and segmentation masks. 
-
-Additionally, a simple tracking algorithm has been developed that is able to assign unique ids to each fish on camera and track them until they get out of sight. 
-
-By the end of the thesis the best detection model for underwater videos has been found to be YOLOv5, which achieves good accuracy and framerate.
